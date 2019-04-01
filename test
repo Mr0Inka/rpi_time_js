@@ -1,2 +1,32 @@
   const image = await jimp.read('test/image.png');
         image.blur(5);
+
+    let rsum;
+    let gsum;
+    let bsum;
+    let asum;
+    let x;
+    let y;
+    let i;
+    let p;
+    let p1;
+    let p2;
+    let yp;
+    let yi;
+    let yw;
+    let pa;
+
+    const wm = this.bitmap.width - 1;
+    const hm = this.bitmap.height - 1;
+    // const wh = this.bitmap.width * this.bitmap.height;
+    const rad1 = r + 1;
+
+    const mulSum = mulTable[r];
+    const shgSum = shgTable[r];
+
+    const red = [];
+    const green = [];
+    const blue = [];
+    const alpha = [];
+
+    const vmin = [];
