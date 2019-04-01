@@ -1,0 +1,2 @@
+  const image = await jimp.read('test/image.png');
+        image.blur(5);
