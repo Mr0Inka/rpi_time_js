@@ -1,6 +1,3 @@
-  const image = await jimp.read('test/image.png');
-        image.blur(5);
-
 let request = require("request");
 let timeJob = require('child_process').exec;
 
